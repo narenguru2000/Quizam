@@ -1,0 +1,80 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Nunito Sans', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+:root {
+    --primary-color: #f28627;
+    --secondary-color: #f25c05;
+    --background-color: #fffbfb;
+    --btn-hover-color: #5b5b5b;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+
+}
+
+body {
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+    /* border: 2px solid red; */
+    max-width: 125rem;
+    margin: auto;   
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.heading__content {
+    text-align: center;
+    margin: 25rem;
+}
+
+.heading {
+    font-family: 'Nunito Sans', sans-serif; 
+    font-size: 10rem;
+    font-weight: 700;
+    margin: 2rem;
+    letter-spacing: .3rem;
+    color: var(--primary-color)
+}
+
+.subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.getStarted__btn {
+    margin: 5rem;
+    font-size: 2rem;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0px 0px 28px -15px var(--secondary-color);
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.getStarted__btn:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    transform: translateY(10px);
+    transition: all ease-in-out 300ms;
+    box-shadow: 0px 20px 39px -7.5px #f25c057d;
+}
