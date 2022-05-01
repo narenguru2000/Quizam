@@ -56,6 +56,7 @@ body {
 .subtitle {
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
+    /* max-width: 250px; */
 }
 
 .getStarted__btn {
@@ -77,4 +78,111 @@ body {
     transform: translateY(10px);
     transition: all ease-in-out 300ms;
     box-shadow: 0px 20px 39px -7.5px #f25c057d;
+}
+
+/* screen sizes -
+max-width -> 480px 768px 1024px 1200px */
+
+@media screen and (max-width: 1200px) {
+    .heading__content{
+        /* border: 2px solid orange; */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 30rem 0rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading{
+        font-size: 8rem;
+    }
+
+    .subtitle{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .getStarted__btn{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .heading__content{
+        /* border: 2px solid magenta; */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 30rem 0rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading{
+        font-size: 10rem;
+    }
+
+    .subtitle{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .getStarted__btn{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heading__content{
+        /* border: 2px solid green; */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 30rem 0rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading{
+        font-size: 10rem;
+    }
+
+    .subtitle{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .getStarted__btn{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading__content{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 20rem 0rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading{
+        font-size: 5.5rem;
+    }
+
+    .subtitle{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .getStarted__btn{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
 }

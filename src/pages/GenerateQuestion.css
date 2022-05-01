@@ -15,6 +15,7 @@
 html {
     scroll-behavior: smooth;
     background-color: var(--background-color);
+    overflow-y: scroll;
 
 }
 
@@ -26,19 +27,40 @@ html {
 }
 
 .content {
-    margin: 5rem;
     /* border: 2px solid red; */
+    margin: 5rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+}
+
+.content__input {
+    max-width: 820px;
+    margin: 0rem auto;
+    /* border: 2px solid black; */
 }
 
 .text__inp {
     font-size: 2rem;
     font-family: 'Nunito Sans', sans-serif;
     padding: 1rem;
+    box-sizing: border-box;
+    max-width: 100%;
 }
+
+.num__inp {
+    display: block;
+    font-size: 2rem;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 1rem;
+    width: 29rem;
+    margin: 5rem auto;
+    text-align: center;
+    
+}
+
 
 ::placeholder {
     font-size: 2rem;
@@ -63,4 +85,31 @@ html {
     color: var(--background-color);
     transition: all ease-in-out 400ms;
     box-shadow: 0px 20px 39px -7.5px #f25c057d;
+}
+
+/* media quries */
+
+@media screen and (max-width: 1024px) {
+    .content__input {
+        max-width: 1024px;
+        padding: 1.3rem
+    }
+}
+
+@media screen and (max-width: 768px){
+    .content__input {
+        max-width: 768px;
+        padding: 2rem
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content__input{
+        max-width: 480px;
+        padding: 1rem;
+    }
+
+    .text__inp{
+        width: 30rem;
+    }
 }

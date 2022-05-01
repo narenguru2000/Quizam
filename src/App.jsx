@@ -1,3 +1,4 @@
+import React from 'react'
 import { HomePage } from './pages/HomePage';
 import { GenerateQuestions } from './pages/GenerateQuestions';
 import { Routes, Route} from 'react-router-dom'
